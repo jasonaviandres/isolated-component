@@ -12,10 +12,15 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@radix-ui/react-tooltip": "^1.0.6",
+    "@tanstack/react-query": "^4.33.0",
     "clsx": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwind-merge": "^1.14.0"
+    "react-icons": "^4.10.1",
+    "tailwind-merge": "^1.14.0",
+    "vite-plugin-svgr": "^3.2.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.3.1",
