@@ -34,7 +34,7 @@ export const Checkbox = ({
     label,
 }: Props) => {
     const checkboxClass = twMerge(
-        "appearance-none peer border cursor-pointer relative border-gray-500 bg-white hover:bg-gray-200 shrink-0 checked:bg-gray-500 checked:border-0 disabled:bg-gray-300 disabled:border-gray-500 checked:hover:gray-600",
+        "appearance-none peer border cursor-pointer relative border-primary-500 bg-white hover:bg-primary-50 shrink-0 checked:bg-primary-500 checked:border-0 disabled:bg-gray-300 disabled:border-gray-500 checked:hover:bg-primary-600",
         SIZE_STYLES[size]
     );
     return (

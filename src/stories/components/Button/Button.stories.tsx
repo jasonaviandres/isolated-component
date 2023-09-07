@@ -33,7 +33,7 @@ export const LoadingButton = {
     },
 } satisfies Story;
 
-export const DisbaledButton = {
+export const DisabledButton = {
     args: {
         disabled: true,
         children: "Disabled",

@@ -10,8 +10,8 @@ type CardVariant =
     | "transparent";
 const VARIANT_STYLES: Record<CardVariant, string> = {
     simple: "bg-white",
-    primary: "bg-white border border-gray-200",
-    secondary: "border border-gray-600 bg-gray-400",
+    primary: "bg-white border border-primary-200",
+    secondary: "border border-secondary-600 bg-secondary-400",
     danger: "border border-red-300 bg-red-50",
     transparent: "border border-gray-500",
 };

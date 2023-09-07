@@ -30,16 +30,16 @@ const SIZE_STYLES: SizeStyleProps = {
 
 const VARIANTS_STYLES: Record<Variant, string> = {
     primary:
-        "bg-black transition ease-in-out duration-300 hover:bg-brand-dark text-white disabled:hover:bg-brand-ui-primary disabled:hover:bg-opacity-75",
+        "bg-primary-500 transition ease-in-out hover:bg-primary-900 disabled:hover:bg-primary-500/60 text-white active:bg-primary-700",
     secondary:
-        "bg-white transition ease-in-out duration-300 text-brand-dark [box-shadow:0px_8px_30px_0px_rgba(0,_0,_0,_0.08)] hover:[box-shadow:0px_0px_10px_0px_rgba(183,_19,_255,_0.1)] disabled:hover:[box-shadow:0px_8px_30px_0px_rgba(0,_0,_0,_0.08)] disabled:hover:bg-opacity-75",
+        "bg-secondary-500 transition ease-in-out text-primary-500 disabled:hover:bg-opacity-60 hover:bg-primary-500 hover:text-white active:bg-primary-700",
     "outlined-primary":
-        "border-2 border-black transition ease-in-out duration-300 hover:bg-gray-50 text-black disabled:text-opacity-50 disabled:hover:text-opacity-50 disabled:hover:bg-inherit font-medium disabled:border-opacity-25",
+        "border-2 border-primary-600 transition ease-in-out hover:bg-primary-50 active:bg-primary-500 active:text-white text-primary-500 disabled:text-opacity-60 disabled:hover:text-opacity-60 disabled:hover:bg-inherit font-medium disabled:border-opacity-60",
     transparent:
-        "bg-transparent border border-gray-200 hover:border-gray-300 text-black transition ease-in-out duration-300 hover:text-ui-main-400 disabled:text-ui-main-400 disabled:hover:text-brand-gray disabled:hover:bg-opacity-75 font-medium",
+        "bg-transparent border border-gray-200 hover:border-gray-300 text-black transition ease-in-out hover:text-ui-main-400 disabled:text-ui-main-400 disabled:hover:text-brand-gray disabled:hover:bg-opacity-75 font-medium",
     black: "border-2 border-black text-black text-medium",
     borderless:
-        "bg-transparent text-black transition ease-in-out duration-300 hover:text-brand-ui-primary disabled:text-brand-gray disabled:hover:text-brand-gray disabled:hover:bg-opacity-75 font-medium p-0",
+        "bg-transparent text-primary-900 transition ease-in-out hover:text-primary-500 disabled:text-opacity-60 disabled:hover:text-opacity-60 disabled:hover:bg-opacity-60 font-medium p-0",
 };
 
 export const Button = forwardRef(
@@ -63,7 +63,7 @@ export const Button = forwardRef(
         }
 
         const buttonClass = twMerge(
-            "rounded-full flex justify-center box-border cursor-pointer font-semibold items-center gap-2 disabled:bg-opacity-75  disabled:cursor-not-allowed",
+            "rounded-full flex justify-center box-border cursor-pointer font-semibold items-center gap-2 disabled:bg-opacity-60  disabled:cursor-not-allowed",
             SIZE_STYLES[size],
             VARIANTS_STYLES[variant],
             className

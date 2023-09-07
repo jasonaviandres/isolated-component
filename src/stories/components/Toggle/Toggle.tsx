@@ -45,7 +45,7 @@ const ToggleButton = ({
         "relative disabled:opacity-50 inline-flex  items-center rounded-full",
         SIZE_STYLES[size],
         {
-            "bg-black": enabled,
+            "bg-primary-500": enabled,
             "bg-gray-400": !enabled,
         }
     );

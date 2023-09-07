@@ -34,12 +34,12 @@ export const RadioButton = ({
     name,
 }: Props) => {
     const checkboxClass = twMerge(
-        "appearance-none peer border cursor-pointer rounded-full relative border-gray-500 bg-white disabled:cursor-not-allowed hover:bg-gray-200 shrink-0 disabled:bg-gray-300 disabled:border-gray-500",
+        "appearance-none peer border cursor-pointer rounded-full relative border-primary-500 bg-white disabled:cursor-not-allowed hover:bg-gray-200 shrink-0 disabled:bg-gray-300 disabled:border-gray-500",
         SIZE_STYLES[size]
     );
 
     const circleClass = twMerge(
-        "absolute hidden peer-checked:block translate-x-1/2 rounded-full bg-gray-500",
+        "absolute hidden peer-checked:block translate-x-1/2 rounded-full bg-primary-500",
         CIRCLE_SIZE_STYLES[size]
     );
     return (
